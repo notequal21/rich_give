@@ -119,9 +119,9 @@ h6 {
 html {
   font-size: 0.933vw;
 
-  // @media (max-width: 991px) {
-  //   font-size: 3.5vw;
-  // }
+  @media (max-width: 767px) {
+    font-size: 4.376vw;
+  }
 }
 
 body {
@@ -146,8 +146,8 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 
-  @media (max-width: 720px) {
-    width: 28.571rem;
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
 

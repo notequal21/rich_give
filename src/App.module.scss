@@ -1,0 +1,12 @@
+.bgCon {
+  background-image: url(./assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 7rem;
+  background-size: 100%;
+  padding: 0 0 21.429rem;
+
+  @media (max-width: 767px) {
+    padding: 0;
+    background: none;
+  }
+}

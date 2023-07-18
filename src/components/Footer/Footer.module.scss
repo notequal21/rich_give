@@ -1,0 +1,60 @@
+.footer {
+  padding: 4.643rem 0;
+  background-color: #fff;
+
+  @media (max-width: 767px) {
+    padding: 3.286rem 0 2.5rem;
+  }
+
+  &Links {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &__item {
+      color: #11335f;
+      text-align: center;
+      font-family: CoFo Sans;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @media (max-width: 767px) {
+        display: block;
+        width: 100%;
+        flex: 0 0 auto;
+        font-size: 0.786rem;
+      }
+
+      &:not(:first-child) {
+        margin: 0 0 0 3.857rem;
+
+        @media (max-width: 767px) {
+          margin: 2rem 0 0;
+        }
+      }
+    }
+  }
+  &__text {
+    margin: 3.571rem 0 0;
+
+    color: #11335f;
+    text-align: center;
+    font-family: CoFo Sans;
+    font-size: 0.929rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+
+    @media (max-width: 767px) {
+      margin: 2.714rem 0 0;
+      font-size: 0.857rem;
+    }
+  }
+}
