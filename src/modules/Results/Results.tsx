@@ -18,9 +18,10 @@ const Results = () => {
   const inputRef: any = useRef(null);
 
   useEffect(() => {
-    axios
-      .get(`${window.spBaseUrl}/json/main/`)
-      .then((response) => setRaffles(response.data.raffles));
+    axios.get(`${window.spBaseUrl}/json/main/`).then((response) => {
+      setCurrentSelectDate(response.data.raffles[0].interval);
+      setRaffles(response.data.raffles);
+    });
     axios
       .post(`${window.spBaseUrl}/api/GetWinnerList`, {
         page: 0,
