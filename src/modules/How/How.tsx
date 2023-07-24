@@ -2,25 +2,9 @@ import axios from 'axios';
 import style from './How.module.scss';
 import { useEffect, useState } from 'react';
 
-import step1Img from './assets/step-1.png';
-import step2Img from './assets/step-2.png';
-import step3Img from './assets/step-3.png';
-
 const How = () => {
-  const [steps, setSteps]: any = useState([
-    {
-      thumb: step1Img,
-      title: 'АКТИВИРУЙ',
-      description: 'Купон в приложении <br/> «Клуб друзей Дикси»',
-    },
-    {
-      thumb: step2Img,
-      title: 'ПОКУПАЙ',
-      description: 'два напитка Rich с картой <br/> «Клуб друзей Дикси»',
-    },
-    { thumb: step3Img, title: 'Участвуй', description: 'в розыгрыше призов' },
-  ]);
-  const [period, setPeriod] = useState('С 25 июля по 24 августа 2023');
+  const [steps, setSteps]: any = useState([]);
+  const [period, setPeriod] = useState('');
 
   useEffect(() => {
     axios

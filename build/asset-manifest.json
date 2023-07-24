@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eefd4dec.css",
-    "main.js": "/static/js/main.096eee80.js",
+    "main.css": "/static/css/main.0c1060a4.css",
+    "main.js": "/static/js/main.13304f60.js",
     "static/js/787.9975820e.chunk.js": "/static/js/787.9975820e.chunk.js",
     "static/media/bg.jpg": "/static/media/bg.bcbbb9b3a6efbe4e255e.jpg",
     "static/media/faq-clouds-2.png": "/static/media/faq-clouds-2.d3ce70af5259117e30a7.png",
@@ -12,26 +12,19 @@
     "static/media/CoFoSans-Regular.woff": "/static/media/CoFoSans-Regular.6ed10cb071e00b25e2e1.woff",
     "static/media/CoFoSans-Medium.woff": "/static/media/CoFoSans-Medium.8125b544497858f79d73.woff",
     "static/media/CoFoSans-Bold.woff": "/static/media/CoFoSans-Bold.64798ad0d4877dc00216.woff",
-    "static/media/step-2.png": "/static/media/step-2.38e23398a8878f8ff6ce.png",
     "static/media/CoFoSans-Bold.woff2": "/static/media/CoFoSans-Bold.cd42885325aa7d69b793.woff2",
     "static/media/CoFoSans-Medium.woff2": "/static/media/CoFoSans-Medium.1c87cb4649d757fd214a.woff2",
     "static/media/CoFoSans-Regular.woff2": "/static/media/CoFoSans-Regular.f30854868d59d5321e30.woff2",
-    "static/media/step-3.png": "/static/media/step-3.c35a9130ea965971acf8.png",
-    "static/media/step-1.png": "/static/media/step-1.fbbbb362134664e9b4b3.png",
-    "static/media/prize-5.png": "/static/media/prize-5.253c495702912bee156e.png",
-    "static/media/prize-3.png": "/static/media/prize-3.1b00bb63ebf59c9845fa.png",
-    "static/media/prize-1.png": "/static/media/prize-1.2636663317da182b91a5.png",
-    "static/media/prize-4.png": "/static/media/prize-4.0a4f9d7c1ed5e6d69d01.png",
     "static/media/logo.svg": "/static/media/logo.8b365002e33244c4fe4f0bd2758dcbf7.svg",
     "index.html": "/index.html",
     "static/media/search.svg": "/static/media/search.aae1fcaa13aa63f85e6292be97288e1f.svg",
     "static/media/arrow.svg": "/static/media/arrow.81c85e716f34106fb9e3.svg",
-    "main.eefd4dec.css.map": "/static/css/main.eefd4dec.css.map",
-    "main.096eee80.js.map": "/static/js/main.096eee80.js.map",
+    "main.0c1060a4.css.map": "/static/css/main.0c1060a4.css.map",
+    "main.13304f60.js.map": "/static/js/main.13304f60.js.map",
     "787.9975820e.chunk.js.map": "/static/js/787.9975820e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eefd4dec.css",
-    "static/js/main.096eee80.js"
+    "static/css/main.0c1060a4.css",
+    "static/js/main.13304f60.js"
   ]
 }

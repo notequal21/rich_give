@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Accordion from '../../components/Accordion/Accordion';
 import style from './Faq.module.scss';
-import { faqs } from './faqs';
 import axios from 'axios';
 
 const Faq = () => {
