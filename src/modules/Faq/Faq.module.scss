@@ -1,0 +1,30 @@
+.faq {
+  margin: 10.714rem 0 0;
+
+  @media (max-width: 767px) {
+    margin: 6.286rem 0 0;
+  }
+
+  &__title {
+    color: #11335f;
+    text-align: center;
+    font-family: CoFo Sans;
+    font-size: 2.714rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 1.714rem;
+    }
+  }
+
+  &Body {
+    margin: 3rem 0 0;
+
+    @media (max-width: 767px) {
+      margin: 2.357rem 0 0;
+    }
+  }
+}

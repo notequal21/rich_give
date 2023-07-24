@@ -1,0 +1,25 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #11335f;
+  text-align: center;
+  font-family: CoFo Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  height: 25.714rem;
+
+  border-radius: 0.571rem;
+  background: #fff;
+
+  &__title {
+    font-size: 1.714rem;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    margin: 2.143rem 0 0;
+    font-size: 1.429rem;
+  }
+}

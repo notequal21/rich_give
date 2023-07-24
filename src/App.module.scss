@@ -10,3 +10,35 @@
     background: none;
   }
 }
+
+.faqCon {
+  position: relative;
+
+  &::before,
+  &::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 3rem;
+    pointer-events: none;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &::before {
+    left: 0;
+    background-image: url(./assets/img/faq-clouds-1.png);
+  }
+  &::after {
+    right: 0;
+    background-image: url(./assets/img/faq-clouds-2.png);
+  }
+}

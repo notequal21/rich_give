@@ -49,6 +49,7 @@
     top: calc(100% + 0.143rem);
     padding: 0.857rem 1.143rem;
     max-height: 0;
+    overflow-y: scroll;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;

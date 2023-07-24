@@ -2,6 +2,7 @@
   padding: 0 0 5rem;
 
   @media (max-width: 767px) {
+    scroll-margin-block-start: 6rem;
     padding: 0 0 4.286rem;
   }
 
@@ -123,6 +124,10 @@
     overflow: hidden;
     border-collapse: collapse;
 
+    &.noneResult {
+      border-radius: 0.6rem 0.6rem 0 0;
+    }
+
     tr {
       td {
         width: 20rem;
@@ -183,6 +188,10 @@
       background-color: #fef2f7;
       padding: 0.714rem 1.429rem 0.714rem 1rem;
 
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
       &:nth-child(even) {
         background-color: #fff;
       }
@@ -203,10 +212,18 @@
           margin: 0 0 0 2rem;
           font-weight: 400;
         }
+
+        @media (max-width: 767px) {
+          flex: 0 0 50%;
+        }
       }
       &Row {
         &:not(:first-child) {
           margin: 0.714rem 0 0;
+        }
+
+        @media (max-width: 767px) {
+          display: flex;
         }
       }
     }
@@ -245,5 +262,37 @@
   .con {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.noReuslt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  color: #11335f;
+  text-align: center;
+  font-family: CoFo Sans;
+  font-size: 1.286rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  height: 21.429rem;
+  border-radius: 0 0 0.6rem 0.6rem;
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    margin: 1.429rem 0 0;
+    border-radius: 0.429rem;
+    height: 13.286rem;
+    font-size: 0.929rem;
+
+    br {
+      display: block;
+    }
   }
 }

@@ -9,7 +9,7 @@ const Main = () => {
   const isMobile = useMediaQuery('(max-width:767px)');
 
   return (
-    <main className={style.main}>
+    <main id='main-section' className={style.main}>
       <div className={style.main__bg}>
         <img src={isMobile ? bgMobile : bg} alt='' />
       </div>

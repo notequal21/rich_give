@@ -1,14 +1,14 @@
 export const footerLinks = [
   {
     name: 'Политика конфиденциальности',
-    href: '',
+    href: '/upload/docs/politics.pdf',
   },
   {
     name: 'Правила акции',
-    href: '',
+    href: '/upload/docs/rules.pdf',
   },
   {
     name: 'обратная связь',
-    href: '',
+    href: '#form',
   },
 ];

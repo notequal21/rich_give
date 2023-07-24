@@ -52,6 +52,11 @@
     font-weight: 400;
     line-height: 170%;
 
+    a {
+      color: #f476a7;
+      text-decoration: underline;
+    }
+
     @media (max-width: 767px) {
       margin: 2.714rem 0 0;
       font-size: 0.857rem;
