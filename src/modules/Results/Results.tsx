@@ -12,7 +12,7 @@ const Results = () => {
   const [raffles, setRaffles] = useState([]);
   const [currentRaffleID, setCurrentRaffleID] = useState('');
   const [winners, setWinners]: any = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const [isLastPage, setIsLastPage] = useState(false);
   const [errText, setErrText] = useState('');
   const inputRef: any = useRef(null);
@@ -78,7 +78,7 @@ const Results = () => {
         setIsLastPage(true);
         setErrText(err.response.data.errorText);
       });
-    setCurrentPage(0);
+    setCurrentPage(1);
     setIsLastPage(false);
 
     axios
@@ -106,7 +106,7 @@ const Results = () => {
 
     if (value.length >= 4) {
       setWinners([]);
-      setCurrentPage(0);
+      setCurrentPage(1);
       setIsLastPage(false);
 
       axios
@@ -130,7 +130,7 @@ const Results = () => {
         });
     } else if (value.length === 0) {
       setWinners([]);
-      setCurrentPage(0);
+      setCurrentPage(1);
       setIsLastPage(false);
 
       axios
