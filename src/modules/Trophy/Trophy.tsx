@@ -27,7 +27,7 @@ const Trophy = () => {
               </div>
               <div
                 className={style.trophyBody__itemTitle}
-                dangerouslySetInnerHTML={{ __html: `${item.title}` }}
+                dangerouslySetInnerHTML={{ __html: `${item.description}` }}
               ></div>
             </div>
           ))}

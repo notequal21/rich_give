@@ -45,7 +45,7 @@ const Results = () => {
 
     axios
       .post(`${window.spBaseUrl}/api/GetWinnerList`, {
-        page: currentPage,
+        page: currentPage + 1,
       })
       .then((response) => {
         if (response.data.isLastPage) {
@@ -244,7 +244,7 @@ const Results = () => {
                   <div className={style.resultsList__itemRow}>
                     <div className={style.resultsList__itemCol}>ПРИЗ</div>
                     <div className={style.resultsList__itemCol}>
-                      {item.date}
+                      {item.prize}
                     </div>
                   </div>
                 </div>

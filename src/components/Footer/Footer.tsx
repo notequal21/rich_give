@@ -31,7 +31,12 @@ const Footer = () => {
           {footerLinks.map((item: any, index) => {
             if (item.href.split('').some((item: any) => item === '#')) {
               return (
-                <a href='' className={style.footerLinks__item} onClick={toForm}>
+                <a
+                  key={index}
+                  href=''
+                  className={style.footerLinks__item}
+                  onClick={toForm}
+                >
                   {item.name}
                 </a>
               );

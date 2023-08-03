@@ -30,7 +30,7 @@ const How = () => {
         <div className={style.how__subtitle}>{period}</div>
         <div className={style.howBody}>
           {steps.map((item: any, index: any) => (
-            <div className={style.howStep}>
+            <div key={index} className={style.howStep}>
               <div className={style.howStep__img}>
                 <img src={item.thumb} alt='' />
               </div>
