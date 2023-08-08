@@ -62,7 +62,10 @@ const Header = () => {
 
   return (
     <>
-      <header ref={headerRef} className={`${style.header}`}>
+      <header
+        ref={headerRef}
+        className={`${style.header} ${isMenuOpen && style.open}`}
+      >
         <div className='container'>
           <div className={style.headerBody}>
             {isMobile && (
@@ -99,7 +102,49 @@ const Header = () => {
           </div>
         </div>
       </header>
-      {!isMobile && (
+      <header
+        ref={headerRef}
+        className={`${style.header} ${style.fixed} ${isOpen && style.open}  ${
+          isMenuOpen && style.open
+        }`}
+      >
+        <div className='container'>
+          <div className={style.headerBody}>
+            {isMobile && (
+              <>
+                <div
+                  onClick={() => setMenuOpen(!isMenuOpen)}
+                  className={`${style.headerBody__burger} ${
+                    isMenuOpen && style.active
+                  }`}
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div className={style.headerBody__logo}>
+                  <img src={logoSvg} alt='' />
+                </div>
+              </>
+            )}
+
+            <div
+              className={`${style.headerMenu} ${isMenuOpen && style.active}`}
+            >
+              {links.map((item, index) => (
+                <div
+                  key={index}
+                  onClick={() => handleLink(item.to)}
+                  className={style.headerMenu__item}
+                >
+                  {item.name}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </header>
+      {/* {!isMobile && (
         <header
           ref={headerRef}
           className={`${style.header} ${style.fixed} ${isOpen && style.open} `}
@@ -140,7 +185,7 @@ const Header = () => {
             </div>
           </div>
         </header>
-      )}
+      )} */}
     </>
   );
 };

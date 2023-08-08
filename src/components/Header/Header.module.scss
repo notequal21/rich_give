@@ -2,12 +2,21 @@
   position: absolute;
   z-index: 10;
   left: 0;
-  top: 0;
+  top: 2.142rem;
   right: 0;
   background: #11335f;
 
   @media (max-width: 767px) {
-    position: fixed;
+    position: absolute;
+    top: 1.71rem;
+
+    &.open {
+      transform: translate(0, 0rem) !important`;
+      top: 0;
+
+      .headerMenu {
+      }
+    }
   }
 
   // &.scroll {
@@ -21,11 +30,16 @@
 
   &.fixed {
     position: fixed;
-    transform: translate(0, -105%);
+    // transform: translate(0, -105%);
+    transform: translate(0, -175%);
     transition: transform 0.5s ease;
 
     &.open {
-      transform: translate(0);
+      transform: translate(0, -2.142rem);
+
+      @media (max-width: 767px) {
+        transform: translate(0, -1.71rem);
+      }
     }
   }
 

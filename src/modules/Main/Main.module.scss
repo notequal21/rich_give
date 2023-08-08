@@ -1,8 +1,12 @@
 .main {
-  margin: 3.571rem 0 0;
+  // margin: 3.571rem 0 0;
+  margin: calc(3.571rem + 2.142rem) 0 0;
+  // margin: 5.713rem 0 0;
   position: relative;
 
   @media (max-width: 767px) {
+    margin: calc(3.571rem + 1.714rem) 0 0;
+
     &::before {
       content: '';
       position: absolute;
