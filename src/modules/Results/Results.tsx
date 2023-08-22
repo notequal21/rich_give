@@ -19,15 +19,17 @@ const Results = () => {
 
   useEffect(() => {
     axios.get(`${window.spBaseUrl}/json/main/`).then((response) => {
-      setCurrentSelectDate(response.data.raffles[0].interval);
       setRaffles(response.data.raffles);
+      setCurrentRaffleID(response.data.raffles[0].id);
+      setCurrentSelectDate(response.data.raffles[0].interval);
     });
+
     axios
       .post(`${window.spBaseUrl}/api/GetWinnerList`, {
         page: 0,
+        raffle: currentRaffleID,
       })
       .then((response) => {
-        console.log(response);
         if (response.data.isLastPage) {
           setIsLastPage(true);
         }
@@ -46,6 +48,7 @@ const Results = () => {
     axios
       .post(`${window.spBaseUrl}/api/GetWinnerList`, {
         page: currentPage + 1,
+        raffle: currentRaffleID,
       })
       .then((response) => {
         if (response.data.isLastPage) {
@@ -59,6 +62,8 @@ const Results = () => {
 
   const handleSelect = (id: any) => {
     inputRef.current.value = '';
+
+    setCurrentRaffleID(id);
 
     axios
       .post(`${window.spBaseUrl}/api/GetWinnerList`, {
@@ -136,6 +141,7 @@ const Results = () => {
       axios
         .post(`${window.spBaseUrl}/api/GetWinnerList`, {
           page: 0,
+          raffle: currentRaffleID,
         })
         .then((response) => {
           setWinners(response.data.winners);
